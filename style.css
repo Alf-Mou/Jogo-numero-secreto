@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background: linear-gradient(to bottom, #000000 65%, #330000, #660000, #990000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 35px;
+    border: white solid 3px;
+    background-image: url(assets/Ruido-red.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.container__corpo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.container__informacoes {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 16px;
+}
+
+.container__textos__titulo {
+    font-family: "Inter", sans-serif;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.container__textos__texto{ 
+    font-family: var(--fonte-principal);
+    margin-bottom: 15px;
+}
+
+.container__input {
+    height: 60px;
+    border: transparent;
+    border-radius: 12px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.container__botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.container__botoes__botao {
+    color: black;
+    width: 50%;
+    height: 60px;
+    border: transparent;
+    border-radius: 10px;
+    background-color: #660000;
+    font-family: var(--fonte-principal);
+    font-size: 22px;
+}
+
+.container__botoes__botao:hover{
+    background-color: red;
+}
+
+.container__botoes__botao:disabled{
+    background-color: gray;
+}
+
+.principal__img {
+    width: 750px;
+}

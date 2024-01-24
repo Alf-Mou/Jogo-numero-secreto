@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>BEM-VINDO!</h1>
-    <p>Este é o jogo do número secreto</p>
+    <div class="container">
+        <div class="container__corpo">
+            <div class="container__informacoes">
+                <div class="container__textos">
+                    <h1 class="container__textos__titulo"></h1>
+                    <p class="container__textos__texto"></p>
+                </div>  
+                <input type="number" min="1" max="100" class="container__input">  
+                <div class="container__botoes">
+                    <button type="button" onclick="verificarChute()" class="container__botoes__botao">Guess</button>
+                    <button type="button" onclick="reiniciarJogo()" id="reiniciar" class="container__botoes__botao" disabled>New game</button>
+                </div>  
+            </div>
+            <img src="assets/crusader.png" class="principal__img">
+        </div>
+    </div>  
+
+
     <script  src="app.jr" defer></script>
 </body>
 </html>
