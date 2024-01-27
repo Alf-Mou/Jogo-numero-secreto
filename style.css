@@ -42,7 +42,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin: 16px;
+    margin: 45px;
 }
 
 .container__textos__titulo {
@@ -53,15 +53,19 @@ body {
 
 .container__textos__texto{ 
     font-family: var(--fonte-principal);
+    font-size: 25px;
     margin-bottom: 15px;
 }
 
 .container__input {
     height: 60px;
+    font-family: var(--fonte-principal);
+    font-size: 20px;
     border: transparent;
     border-radius: 12px;
-    color: black;
+    color: red;
     margin-bottom: 15px;
+    padding: 10px;
 }
 
 .container__botoes {
